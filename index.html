@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Genrator grafów ryzyka</title>
+  </head>
+  <body>
+    <main>
+      <div class="left-panel">
+        <div class="left-area">
+          <label for="input">Podaj dane jak w przykładzie:</label>
+          <textarea class="input" cols="30" rows="3" id="input">
+L: Cd Fa Pa W2
+Ś: Cb Fb Pa W2
+P: Cd Fb Pa W2
+        </textarea
+          >
+          <button id="generate">Generuj</button>
+        </div>
+      </div>
+      <div class="right-panel">
+        <canvas id="canvas"></canvas>
+        <!-- <div class="right-panel">
+          <img src="pustygraf.png" alt="graf" />
+        </div> -->
+      </div>
+    </main>
+    <script src='canvas2html.js'></script>
+    <script src="script.js"></script>
+    <script src="logika.js"></script>
+  </body>
+</html>
